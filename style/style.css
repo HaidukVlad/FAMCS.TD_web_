@@ -9,6 +9,7 @@
 body {
     height: 5000px;
 }
+/* header navigation */
 
 .container {
     margin: 0 auto;
@@ -31,11 +32,6 @@ nav {
     border-radius: 0 0 15px 15px;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
 nav ul {
     display: flex;
     flex-direction: row;
@@ -47,6 +43,7 @@ nav ul {
 }
 
 a {
+    color: #000;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -80,4 +77,62 @@ nav ul li:last-child a{
 .logo {
     width: 62px;
     height: 62px;
+}
+
+/* header main */
+
+.header_main {
+    padding-top: 200px;
+}
+
+.header_main h1, .header_main p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.header_main h1 {
+    font-size: 56px;
+}
+
+.header_main p {
+    font-size: 22px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header_main p span {
+    color: #FF7373;
+}
+
+.header_main_buttons_container{
+    margin: 50px auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#header_main_download_button {
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    background: #000;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+}
+
+#header_main_info_button {
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #000;
+    border-radius: 15px;
+    color: #000;
+}
+
+#header_main_download_button:hover, #header_main_info_button:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
 }
