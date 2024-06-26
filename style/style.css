@@ -1,0 +1,45 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    max-width: 700px;
+align-items: center;
+}
+nav ul li {
+    width: 175px;
+    padding: 20px 60px;
+    font-size: 18px;
+}
+
+nav ul li:last-child{
+    background-color: aqua;
+}
+
+.logo {
+    width: 58px;
+    height: 58px;
+}
