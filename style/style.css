@@ -6,6 +6,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    height: 5000px;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1020px;
@@ -15,13 +19,16 @@ header {
     height: 1080px;
     background-image: url(../img/bg.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
+    padding: 20px;
+    position: fixed;
+    border-radius: 0 0 15px 15px;
 }
 
 a {
@@ -36,6 +43,7 @@ nav ul {
     list-style: none;
     max-width: 800px;
     align-items: center;
+    margin-left: 100px;
 }
 
 a {
@@ -70,6 +78,6 @@ nav ul li:last-child a{
 }
 
 .logo {
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
 }
