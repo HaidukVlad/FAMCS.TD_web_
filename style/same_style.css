@@ -1,0 +1,119 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: auto;
+    overflow: hidden;
+}
+
+/* load box */
+.load_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1480px;
+    height: 762px;
+    opacity: 1;
+    background: #000;
+    z-index: 3;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: opacity 1s ease;
+}
+
+@keyframes spinning {
+    from {rotate: 0}
+    to {rotate: 360deg}
+  }
+  
+  .loader {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border: 5px solid #ADD8E6;
+    border-radius: 100%;
+    animation-name: spinning;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+    &::after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      border-top: 5px solid #A9B5EC;
+      border-right: 5px solid #A9B5EC;
+      border-top-right-radius: 100%;
+      position: absolute;
+      right: -5px;
+      top: -5px;
+    }
+  }
+/* header navigation */
+
+.container {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    border-radius: 0 0 15px 15px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    max-width: 800px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+nav ul li a:hover {
+    background-size: 100% 2px;
+}
+
+
+nav ul li {
+    width: 200px;
+    padding: 20px 50px;
+    font-size: 18px;
+}
+
+nav ul li:last-child{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+
+nav ul li:last-child a{
+    color: #fff;
+}
+
+.logo {
+    width: 62px;
+    height: 62px;
+}
