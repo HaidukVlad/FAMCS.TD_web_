@@ -10,7 +10,7 @@ var scroll = function(configs) {
     ];
     
     elements.forEach(element => {
-      element.style[style] = 'rgb(' + colorsVal[0].join(',') + ')';
+      element.style[style] = 'rgba(' + colorsVal[0].join(',') + ')';
     });
   });
 
@@ -35,10 +35,10 @@ var scroll = function(configs) {
           } else {
             val = colorsVal[0][i] - ((colorsVal[0][i] - colorsVal[1][i]) * pct);
           }
-          currentColor[i] = Math.round(val);
+          currentColor[i] = i < 3 ? Math.round(val) : val;
         }
         elements.forEach(element => {
-          element.style[style] = 'rgb(' + currentColor.join(',') + ')';
+          element.style[style] = 'rgba(' + currentColor.join(',') + ')';
         });
       }
     });
@@ -56,8 +56,8 @@ var scroll = function(configs) {
     {
       elements: Array.from(navs), // Преобразуем NodeList в массив
       style: 'background-color',
-      positions: [0, 1000],
-      value: ['255,255,255', '0,0,0']
+      positions: [0, 800],
+      value: ['255,255,255,0', '0,0,0,1']
     },
     {
       elements: Array.from(navLinks),
@@ -80,3 +80,19 @@ var scroll = function(configs) {
   ]);
 })();
 
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    const loadBoxes = document.querySelectorAll('.load_box');
+    loadBoxes.forEach(function(box) {
+      box.style.opacity = '0';
+      box.style.transition = 'opacity 1s ease';
+    });
+
+    setTimeout(function() {
+      loadBoxes.forEach(function(box) {
+        box.style.display = 'none';
+        document.querySelector('body').style.overflow = 'visible'
+      });
+    }, 1500);
+  }, 1500);
+});
