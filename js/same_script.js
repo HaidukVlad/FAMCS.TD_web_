@@ -97,3 +97,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   }, 1000);
 });
+
+document.getElementById('footer_instagram').addEventListener('click', function() {
+  window.open("https://www.instagram.com/meat._.dumpling/", '_blank');
+});
+
+document.getElementById('footer_vk').addEventListener('click', function() {
+  window.open("https://vk.com/mcht__black", '_blank');
+});
+
+document.getElementById('footer_telegram').addEventListener('click', function() {
+  window.open("https://t.me/dgv_sb", '_blank');
+});
+
+document.getElementById('footer_tiktok').addEventListener('click', function() {
+  window.open("https://www.tiktok.com/@ultra_uretra?_t=8naF05NS1R7&_r=1", '_blank');
+});
+
+document.getElementById('footer_email').addEventListener('click', function() {
+  window.open("mailto:lolly1bomb2@gmail.com", '_blank');
+});

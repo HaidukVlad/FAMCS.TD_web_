@@ -64,3 +64,68 @@ document.addEventListener('DOMContentLoaded', function() {
 
   setInterval(showNextSlide, 3200); // Меняем слайды каждые 3.2 секунды 
 });
+
+document.getElementById('main_info_phone_text').addEventListener('click', function() {
+  navigator.clipboard.writeText("+375 29 162 4146").then(function() {
+    const copiedElement = document.getElementById('coppied');
+
+    // Показать элемент с плавным переходом
+    copiedElement.style.display = 'block';
+    copiedElement.style.opacity = '0';
+    copiedElement.style.transition = 'opacity 0.5s';
+    setTimeout(function() {
+      copiedElement.style.opacity = '1';
+    }, 10); // Небольшая задержка для начала перехода
+
+    // Скрыть элемент с плавным переходом
+    setTimeout(function() {
+      copiedElement.style.opacity = '0';
+      setTimeout(function() {
+        copiedElement.style.display = 'none';
+      }, 500); // Время должно совпадать с временем transition
+    }, 2000); // Время задержки перед началом скрытия
+  });
+});
+document.getElementById('main_info_mail_text').addEventListener('click', function() {
+  navigator.clipboard.writeText("lolly1bomb2@gmail.com").then(function() {
+    const copiedElement = document.getElementById('coppied');
+
+    // Показать элемент с плавным переходом
+    copiedElement.style.display = 'block';
+    copiedElement.style.opacity = '0';
+    copiedElement.style.transition = 'opacity 0.5s';
+    setTimeout(function() {
+      copiedElement.style.opacity = '1';
+    }, 10); // Небольшая задержка для начала перехода
+
+    // Скрыть элемент с плавным переходом
+    setTimeout(function() {
+      copiedElement.style.opacity = '0';
+      setTimeout(function() {
+        copiedElement.style.display = 'none';
+      }, 500); // Время должно совпадать с временем transition
+    }, 2000); // Время задержки перед началом скрытия
+  });
+})
+
+document.getElementById('main_info_address_text').addEventListener('click', function() {
+  navigator.clipboard.writeText("BSU FAMCS Nezavisimosti av. 4").then(function() {
+    const copiedElement = document.getElementById('coppied');
+
+    // Показать элемент с плавным переходом
+    copiedElement.style.display = 'block';
+    copiedElement.style.opacity = '0';
+    copiedElement.style.transition = 'opacity 0.5s';
+    setTimeout(function() {
+      copiedElement.style.opacity = '1';
+    }, 10); // Небольшая задержка для начала перехода
+
+    // Скрыть элемент с плавным переходом 
+    setTimeout(function() {
+      copiedElement.style.opacity = '0';
+      setTimeout(function() {
+        copiedElement.style.display = 'none';
+      }, 500); // Время должно совпадать с временем transition
+    }, 2000); // Время задержки перед началом скрытия
+  });
+})
