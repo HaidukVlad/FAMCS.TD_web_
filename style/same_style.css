@@ -69,6 +69,7 @@ nav {
     padding: 20px;
     position: fixed;
     border-radius: 0 0 15px 15px;
+    z-index: 2;
 }
 
 nav ul {
@@ -98,7 +99,7 @@ nav ul li a:hover {
 
 nav ul li {
     width: 200px;
-    padding: 20px 50px;
+    padding: 20px 60px;
     font-size: 18px;
 }
 
@@ -151,6 +152,12 @@ nav ul li:last-child a{
 
     .container {
         max-width: 720px;
+    }
+}
+
+@media  screen and (max-width: 854px) {
+    nav ul {
+        margin-left: 40px;
     }
 }
 

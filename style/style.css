@@ -181,6 +181,14 @@ nav ul li:first-child a{
     };
 }
 
+@media  screen and (max-width: 854px) {
+    .main_info_flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 500px) {
     nav ul li:first-child a{
         background-size: 100% 1px;
