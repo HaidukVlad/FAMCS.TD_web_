@@ -11,6 +11,17 @@ body {
     overflow: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);    
+    width: 3px;    /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #FF7373;
+}
+
 /* load box */
 .load_box {
     position: fixed;
@@ -99,7 +110,7 @@ nav ul li a:hover {
 
 nav ul li {
     width: 200px;
-    padding: 20px 60px;
+    padding: 20px 50px;
     font-size: 18px;
 }
 
@@ -117,6 +128,29 @@ nav ul li:last-child a{
 .logo {
     width: 62px;
     height: 62px;
+}
+
+footer {
+    margin-top: 100px;
+    border-top: 1px solid #000; 
+    height: auto;
+    padding: 35px 0;
+    color: #3a3a3a;
+}
+
+footer i:hover{
+    color: #000;
+    transition: 0.3s;
+}
+
+.foot_container {
+    margin: 0 auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 35px;
+    align-items: center;
 }
 
 
