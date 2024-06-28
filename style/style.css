@@ -161,4 +161,12 @@ nav ul li:first-child a{
         font-size: 10px;
         height: 200px;
     }
+
+    .header_main {
+        padding-top: 80px;
+    }
+
+    .main {
+        padding-top: 40px;
+    }
 }

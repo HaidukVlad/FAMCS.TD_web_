@@ -188,3 +188,15 @@ nav ul li:last-child a{
         background-size: 100% 1px;
     }
 }
+
+@media screen and (max-width: 376px) {
+    nav {
+        padding: 7px;
+    }
+
+    nav ul li {
+        padding: 7px 15px;
+        width: 75px;
+        font-size: 9px;
+    }
+}
