@@ -56,25 +56,25 @@ var scroll = function(configs) {
       {
         elements: Array.from(navs), // Преобразуем NodeList в массив
         style: 'background-color',
-        positions: [0, 500],
+        positions: [0, 250],
         value: ['255,255,255,0', '0,0,0,1']
       },
       {
         elements: Array.from(navLinks),
         style: 'color',
-        positions: [0, 250],
+        positions: [0, 100],
         value: ['0,0,0', '255,255,255']
       },
       {
         elements: Array.from(navLinksLast),
         style: 'color',
-        positions: [0, 250],
+        positions: [0, 100],
         value: ['255,255,255', '0,0,0']
       },
       {
         elements: Array.from(navLiLast),
         style: 'background-color',
-        positions: [0, 250],
+        positions: [0, 100],
         value: ['0,0,0', '255,255,255']
       }
     ]);

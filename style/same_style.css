@@ -196,7 +196,11 @@ nav ul li:last-child a{
 
     nav ul li {
         padding: 7px 15px;
-        width: 75px;
-        font-size: 9px;
+        width: 70px;
+        font-size: 8px;
+    }
+
+    .container {
+        max-width: 330px;
     }
 }

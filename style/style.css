@@ -122,6 +122,50 @@ nav ul li:first-child a{
     border-radius: 10px;
 }
 
+.main_info_flex{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.main_info_contact{
+    width: 50%;
+    background: #fff;
+    height: auto;
+}
+
+.main_info_mail {
+    width: 50%;
+    height: auto;
+    background: #000;
+}
+
+.main_info_contact h2 {
+    font-size: 45px;
+}
+
+.main_info_contact p {
+    color: #FF7373;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.main_info_contact ul li {
+    list-style: none;
+    color : #000;
+    font-size: 18px;
+}
+
+.main_info_contact ul li p {
+    color : #000;
+    font-size: 18px;
+}
+
+.main_info_contact i {
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 1016px) {
     .header_main p {
         font-size: 18px;
