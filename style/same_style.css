@@ -245,3 +245,35 @@ footer i:hover{
         max-width: 330px;
     }
 }
+
+
+@media screen and (max-width: 281px) {
+    .container {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+
+    header {
+        height: auto;
+        width: 100%;
+    }
+
+    nav {
+        padding: 7px;
+    }
+
+    nav ul li {
+        padding: 5px 10px;
+        width: auto;
+        font-size: 7px;
+    }
+
+    .logo {
+        width: 17px;
+        height: 17px;
+    }
+
+    .header_main h1, .main h1 {
+        font-size: 30px;
+    }
+}

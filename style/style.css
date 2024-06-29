@@ -243,26 +243,34 @@ nav ul li:first-child a{
         font-size: 14px;
     };
 }
-
+/* 
 @media  screen and (max-width: 854px) {
     .main_info_flex{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
     }
-}
+
+    
+} */
 
 @media screen and (max-width: 500px) {
     nav ul li:first-child a{
         background-size: 100% 1px;
     }
 
-    .main h1, .header_main h1 {
+    .main h1, .header_main h1, .main_info_contact h2, .main_info_mail h2 {
         font-size: 36px;
     }
 
-    .header_main p {
+    .header_main p, .main p {
         font-size: 12px;
+    }
+
+    .main_info_flex {
+        flex-direction: column;
+    }
+
+    .main_info_contact, .main_info_mail {
+        width: 100%;
     }
 
     #header_main_download_button, #header_main_info_button  {
@@ -284,4 +292,12 @@ nav ul li:first-child a{
     .main {
         padding-top: 40px;
     }
+}
+
+@media screen and (max-width: 281px) {
+    #header_main_download_button, #header_main_info_button  {
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }   
 }
