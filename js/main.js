@@ -1,15 +1,3 @@
-
-// carousel
-
-
-// const mainCarousel = document.querySelector('.main_carousel');
-
-// mainCarousel.innerHTML = 
-//   `<div class="main_carousel_item">
-//     <h3>Vasya</h3>
-//     <img src="" alt="">
-//   </div>`;
-
 document.addEventListener('DOMContentLoaded', function() {
   const mainCarousel = document.getElementById('mainCarousel');
 
