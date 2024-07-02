@@ -7,3 +7,42 @@ nav ul li:nth-child(3) a{
         background-size: 100% 1px;
     }
 }
+
+.game_container {
+    display: flex;
+    justify-content: center;
+}
+canvas {
+    border: 1px solid black;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #2f2f2f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #000;
+}
+
+.controls .lives-counter {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.controls i {
+    color:red;
+}

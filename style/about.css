@@ -110,3 +110,22 @@ nav ul li:nth-child(2) a{
         margin: 100px 0 70px 0;
     }
 }
+
+@media screen and (max-width: 430px) {
+    .main h3 {
+        font-size: 19px;
+    }
+
+    .flex_team_item p, .flex_team_item h3 {
+        font-size: 9px;
+    }
+
+    .main h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .p_info {
+        font-size: 9px;
+    }
+}
