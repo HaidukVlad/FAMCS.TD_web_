@@ -67,4 +67,11 @@ nav ul li:last-child a{
     border: none;
     border-radius: 15px;
     padding: 20px;
+    background: #FF7373;
+    color: #fff;
+}
+
+#download:hover {
+    transition: 0.2s;
+    background: #cb5858;
 }

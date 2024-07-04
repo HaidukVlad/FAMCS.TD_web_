@@ -47,3 +47,42 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  document.querySelector('.p_inst_1').addEventListener('click', function() {
+    window.open("https://www.instagram.com/meat._.dumpling/", '_blank');
+  })
+
+  document.querySelector('.p_inst_2').addEventListener('click', function() {
+    window.open("https://www.instagram.com/viselogya/", '_blank');
+  })
+
+  document.querySelector('.p_inst_3').addEventListener('click', function() {
+    window.open("https://www.instagram.com/_.ilya.03.08._?igsh=MWZjMGdoN3NqdWdwcA==", '_blank');
+  })
+
+
+  document.querySelector('.p_tg_1').addEventListener('click', function() {
+    window.open("https://t.me/dgv_sb", '_blank');
+  })
+
+  document.querySelector('.p_tg_2').addEventListener('click', function() {
+    window.open("https://t.me/viselogya", '_blank');
+  })
+
+  document.querySelector('.p_tg_3').addEventListener('click', function() {
+    window.open("https://t.me/ilya_fizik", '_blank');
+  })
+
+
+  document.querySelector('.p_mail_1').addEventListener('click', function() {
+    window.open("mailto:lolly1bomb2@gmail.com", '_blank');
+  });
+
+  document.querySelector('.p_mail_2').addEventListener('click', function() {
+    window.open("mailto:4205353@gmail.com", '_blank');
+  });
+
+  document.querySelector('.p_mail_3').addEventListener('click', function() {
+    window.open("mailto:ilya.chvarkov0903@gmail.com", '_blank');
+  });
+
